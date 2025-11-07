@@ -1,7 +1,5 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MahasiswaController;
 
-Route::get('/', function () {
-    return 'Hello World';
-});
+Route::get('/tambah-data', [MahasiswaController::class, 'tambahData']);
